@@ -10,6 +10,9 @@ export default defineConfig({
     plugins: [externalizeDepsPlugin()]
   },
   renderer: {
+    build: {
+      watch: {}
+    },
     resolve: {
       alias: {
         '@renderer': resolve('src/renderer/src')
