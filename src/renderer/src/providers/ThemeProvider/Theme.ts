@@ -2,9 +2,12 @@ import { createTheme } from '@mui/material'
 
 export const MAIN_COLOR = '#1ed760'
 export const TEXT_COLOR = '#ffffff'
+export const TEXT_SECONDARY_COLOR = '#b3b3b3'
 export const INACTIVE_COLOR = '#a7a7a7'
 export const ERROR_COLOR = '#1ed760'
-export const BACKGROUND_COLOR = '#000000'
+export const BLACK = '#000000'
+export const LIGHT_GRAY = '#000000'
+export const BACKGROUND_COLOR = '#121212'
 
 export const theme = createTheme({
   palette: {
@@ -20,7 +23,7 @@ export const theme = createTheme({
       disabled: INACTIVE_COLOR
     },
     background: {
-      default: BACKGROUND_COLOR
+      default: BLACK
     }
   },
   typography: {
@@ -36,6 +39,18 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           fontSize: 18
+        },
+        fontSizeInherit: {
+          fontSize: 'inherit'
+        },
+        fontSizeSmall: {
+          fontSize: 18
+        },
+        fontSizeMedium: {
+          fontSize: 28
+        },
+        fontSizeLarge: {
+          fontSize: 36
         },
         colorDisabled: {
           color: INACTIVE_COLOR

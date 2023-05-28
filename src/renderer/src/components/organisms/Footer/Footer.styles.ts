@@ -6,6 +6,6 @@ export const FooterContainer = styled('footer')(({ theme }) => ({
   justifyContent: 'space-between',
   alignItems: 'center',
   height: 90,
-  padding: theme.spacing(2),
-  backgroundColor: theme.palette.background.default
+  backgroundColor: theme.palette.background.default,
+  padding: `${theme.spacing(2)} 0`
 }))
