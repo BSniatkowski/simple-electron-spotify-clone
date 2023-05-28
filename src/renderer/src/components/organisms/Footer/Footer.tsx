@@ -3,6 +3,7 @@ import { FooterContainer } from './Footer.styles'
 
 import placeholderImage50x50 from '@images/50x50.png'
 import { useState } from 'react'
+import { LIKE_ICON } from '@atoms/InteractiveIcon/InteractiveIcon.map'
 
 const Footer = (): JSX.Element => {
   const [isIconActive, setIsIconActive] = useState(false)
@@ -11,6 +12,7 @@ const Footer = (): JSX.Element => {
     <FooterContainer>
       <InfoTile
         imgSrc={placeholderImage50x50}
+        iconType={LIKE_ICON}
         isIconActive={isIconActive}
         onIconClick={() => {
           setIsIconActive(!isIconActive)
