@@ -22,7 +22,11 @@ const InfoTile = ({
     </TextWrapper>
     <InteractiveIcon
       iconType={iconType}
+      iconSize='small'
       isIconActive={isIconActive}
+      tooltipText={
+        isIconActive ? 'Remove from Your Library' : 'Add to Your Library'
+      }
       onIconClick={onIconClick}
     />
   </InfoTileContainer>
